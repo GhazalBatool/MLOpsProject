@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import streamlit as st
 
 model = joblib.load("liveModelV1.pkl")
-model = pd.read_csv('mobile_price_rating.csv')
+data = pd.read_csv('mobile_price_rating.csv')
 X = data.iloc[:,:-1]
 Y = data.iloc[:,-1]
 #test train split
